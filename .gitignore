@@ -1,0 +1,7 @@
+# Gerados / temporários
+.tmp/
+__pycache__/
+*.pyc
+
+# Claude Code local
+.claude/settings.local.json
