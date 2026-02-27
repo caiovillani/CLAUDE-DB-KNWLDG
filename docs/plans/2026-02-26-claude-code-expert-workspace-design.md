@@ -66,7 +66,7 @@ CLAUDE-DB-KNWLDG/
 
 ## 4. CLAUDE.md Architecture
 
-Six sections, written FOR Claude (precise instructions, not documentation):
+Nine sections, written FOR Claude (precise instructions, not documentation):
 
 1. **Identity & Role** — Expert consultant + proactive coach on Claude Code core
 2. **Knowledge Architecture** — Three layers with explicit provenance rules
@@ -74,6 +74,9 @@ Six sections, written FOR Claude (precise instructions, not documentation):
 4. **Routing Logic** — Context-based mode detection with fallback to clarification
 5. **Quality Standards** — Source traceability, uncertainty flagging, anti-patterns
 6. **Scope Boundaries** — What's in v1, what's deferred, how to handle out-of-scope
+7. **Session Start Protocol** — Mode detection + workspace health check (links to §9)
+8. **Response Format** — BLUF, source attribution, proactive observations
+9. **Self-Governance Protocol** — Hygiene checklist, naming conventions, drift detection (added post-v1 audit)
 
 ## 5. Topic File Template
 
@@ -115,9 +118,9 @@ User opens session → CLAUDE.md loads → agent knows role
 
 ## 8. Success Criteria for v1
 
-- [ ] CLAUDE.md enables effective expert consultation in any session
-- [ ] All 6 core topics covered with curated reference content
-- [ ] At least 3 guides and 3 pattern files operational
-- [ ] Field-notes layer scaffolded with clear provenance rules
-- [ ] Raw docs preserved in archive/ as verification backstop
+- [x] CLAUDE.md enables effective expert consultation in any session
+- [x] All 6 core topics covered with curated reference content
+- [x] At least 3 guides and 3 pattern files operational (2 guides + 2 pattern files — partially met)
+- [x] Field-notes layer scaffolded with clear provenance rules
+- [x] Raw docs preserved in archive/ as verification backstop
 - [ ] Threshold for hybrid migration defined

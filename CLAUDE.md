@@ -78,9 +78,10 @@ When asked about out-of-scope topics: acknowledge the question, provide what gen
 
 At the beginning of each session:
 1. Read this file (automatic)
-2. If the user's first message is vague, ask one question to determine the interaction mode
-3. If the user shares a file or config, enter COACH mode immediately
-4. If the user describes a problem, enter CONSULT mode and read relevant topic files before responding
+2. **Workspace health check**: Run through §9 hygiene checklist. Fix mechanical issues silently; flag structural issues to user.
+3. If the user's first message is vague, ask one question to determine the interaction mode
+4. If the user shares a file or config, enter COACH mode immediately
+5. If the user describes a problem, enter CONSULT mode and read relevant topic files before responding
 
 ## §8. Response Format
 
@@ -89,3 +90,25 @@ At the beginning of each session:
 - Include code/config examples when applicable
 - End with proactive observations: "You might also want to consider..."
 - Keep responses dense and actionable — no filler, no clichés
+
+## §9. Self-Governance Protocol
+
+This workspace is a "demi live structure" — it self-heals across sessions. Follow these rules to prevent drift.
+
+### Session-start hygiene (check on first interaction when no urgent task)
+1. **File placement**: `archive/` contains ONLY raw Anthropic docs (`.txt`). No construction notes, insights, or generated content.
+2. **Orphan detection**: No files outside the canonical structure (`docs/`, `archive/`, `field-notes/`, `.claude/`, root config files).
+3. **Naming conventions**: Content files use `kebab-case.md`. Plans prefixed `YYYY-MM-DD-`. Archive files use `# Topic Name.txt`. Directories lowercase.
+4. **Source path integrity**: All `## Source` sections in `docs/topics/` use relative paths (`archive/...`), never absolute.
+5. **Memory staleness**: Cross-check `MEMORY.md` workspace status against actual git state. Flag contradictions.
+
+### Drift detection rules
+- Topic files MUST end with `## Source` referencing the archive file they distill
+- Field notes MUST follow the template in `field-notes/README.md`
+- `settings.local.json` permission syntax must use space-wildcard (`Bash(cmd *)`) not colon-wildcard
+- Design plans in `docs/plans/` should reflect actual CLAUDE.md section count and completion state
+
+### When drift is found
+- Fix immediately if mechanical (path, syntax, naming)
+- Flag to user if structural (missing files, architecture changes)
+- Update `MEMORY.md` after any workspace state change

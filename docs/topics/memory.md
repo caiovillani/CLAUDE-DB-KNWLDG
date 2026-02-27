@@ -142,4 +142,4 @@ By default, `--add-dir` does **not** load CLAUDE.md files from additional direct
 
 ## Source
 
-Distilled from: `C:/Users/caiov/claude-agents/CLAUDE-DB-KNWLDG/archive/# Manage Claude's memory.txt`
+Distilled from: `archive/# Manage Claude's memory.txt`

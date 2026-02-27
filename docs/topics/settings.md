@@ -247,4 +247,4 @@ Run `/config` in the REPL to open a tabbed settings interface. Run `/status` to 
 
 ## Source
 
-Distilled from: `C:/Users/caiov/claude-agents/CLAUDE-DB-KNWLDG/archive/# Claude Code settings.txt`
+Distilled from: `archive/# Claude Code settings.txt`

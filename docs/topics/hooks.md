@@ -387,5 +387,5 @@ hooks:
 
 ## Source
 
-Distilled from: `C:/Users/caiov/claude-agents/CLAUDE-DB-KNWLDG/archive/# Hooks reference.txt`
+Distilled from: `archive/# Hooks reference.txt`
 (Claude Code official documentation: Hooks reference page)

@@ -161,4 +161,4 @@ Use `/permissions` inside Claude Code to view all active permission rules and wh
 
 ## Source
 
-Distilled from: `C:/Users/caiov/claude-agents/CLAUDE-DB-KNWLDG/archive/# Configure permissions.txt`
+Distilled from: `archive/# Configure permissions.txt`
